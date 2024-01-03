@@ -1,7 +1,3 @@
-#!/usr/bin/node
-//Change the variable initializers 
-
-
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
