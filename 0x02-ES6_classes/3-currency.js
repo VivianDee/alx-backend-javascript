@@ -20,7 +20,7 @@ export default class Currency {
     this._code = ncode;
   }
 
-   set name(name) {
+  set name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a String');
     }
@@ -28,6 +28,6 @@ export default class Currency {
   }
 
   displayFullCurrency() {
-    return `${this._name} (${this._code})`
+    return `${this._name} (${this._code})`;
   }
 }
