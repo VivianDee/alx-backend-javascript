@@ -19,4 +19,15 @@ export default class Currency {
     }
     this._code = ncode;
   }
+
+   set name(name) {
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be a String');
+    }
+    this._name = name;
+  }
+
+  displayFullCurrency() {
+    return `${this._name} (${this._code})`
+  }
 }
